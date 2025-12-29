@@ -1,44 +1,56 @@
-Live Page:
-https://shiv62002.github.io/climate-final/
+# Climate-Economy Interactive Visualization
 
-Behind the Scenes:
-The goal of this project was to interactively showcase the economic impacts of changes in temperature over time, both globally for the whole world and by each country. We began by collecting and cleaning 20 years of economic and climate data. The hardest part was trying to decide how we want to implement interactive D3.js maps and charts for global and country-level insights. To maintain an interactive site, we made it a point to provide users with access to a wide range of datasets. We wanted to design responsive controls such as dropdowns, sliders, animations, and polished tooltips/legends to keep our viewers hooked. Another challenge that we faced was portraying datasets and showing the correlation between them. With economic changes, there are many factors that can influence how well an economy is doing. In order to correlate our two ideas, we found specific datasets that not only showcase the economic timetable of every country but also data such as wheat yield and damage from natural disasters. With this information, we decided to showcase the data and allow the readers to derive their meanings from this, but we also attempted to showcase the correlation (if possible) between the data presented. 
+Live Page: [Climate Dashboard](https://shiv62002.github.io/climate-final/)
 
-To run our site:
-When you open the main page, you’ll see an interactive world heat map. Use the dropdown menu to choose the data variable (GDP, wheat yield, temperature anomaly, food-price inflation, or disaster damages) and the year slider to scrub through 2000–2022. Scrolling through the years lets you watch how each country’s value evolves.
+This project presents an interactive visualization platform that explores how climate-related changes influence economic outcomes across countries and over time. The site connects long-term climate variables such as temperature anomalies and natural disasters with economic indicators including GDP growth, wheat yield, food-price inflation, and damages as a share of GDP. The interface enables both global-level and country-specific analysis through maps, charts, and time-series comparisons.
 
-When you click on a country in the front-page map, you’ll be taken to another page for that specific nation. On that page, you will see interactive line charts that display the full 2000–2022 trend for 2 of the variables (GDP growth, wheat yield, temperature anomaly, food-price inflation, and disaster damages), letting you hover over points for exact values and compare patterns over time. In the same light, you can interactively visualize datasets which compare global climate trends to economic factors globally for the whole world using the global link at the top of the page.  
+## Behind the Scenes
 
-Acknowledgements:
+The goal of this project was to build an interactive dashboard that reveals possible relationships between climate trends and economic performance over time, both globally and by nation. We gathered, cleaned, and unified roughly two decades of data from multiple sources to make it possible to visualize, compare, and interpret indicators side by side.
 
-Country-Level Data Sources:
+A key challenge was determining how to structure the visual narrative while maintaining usability and interactivity. We implemented D3.js-based maps and charts that respond to user input through dropdowns, sliders, animations, and tooltips. Another difficulty was selecting datasets that meaningfully connect climate conditions to economic outcomes, while still giving users the freedom to draw their own conclusions. By incorporating variables such as wheat yield and natural-disaster-related economic losses, alongside GDP growth and climate trends, the visualizations allow for investigation of potential correlations without imposing rigid interpretations.
 
-Economic Damages from Natural Disasters (% of GDP): Our World in Data
+## How to Use the Site
+
+When opening the main page, an interactive global heat map appears. Use the dropdown to select the variable of interest (GDP growth, wheat yield, temperature anomaly, food-price inflation, or disaster damages as a share of GDP). Use the year slider to explore how each country's values change between 2000 and 2022.
+
+Clicking a country loads a dedicated page for that nation, displaying interactive line charts for two selected indicators across the entire 2000–2022 period. Hovering over points reveals exact values, allowing users to compare patterns over time. A link in the site header provides access to global visualizations that show long-term climate and economic changes at the worldwide level rather than country by country.
+
+## Acknowledgements
+
+### Country-Level Data Sources
+
+Economic Damages from Natural Disasters (% of GDP): Our World in Data  
 https://ourworldindata.org/natural-disasters
-Wheat Yield (tons/hectare): Our World in Data
+
+Wheat Yield (tons/hectare): Our World in Data  
 https://ourworldindata.org/grapher/wheat-yields?time=1755
-Annual GDP Growth & Values (constant USD): World Bank
+
+Annual GDP Growth & Values (constant USD): World Bank  
 https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG
-Consumer Price Inflation (%): World Bank
+
+Consumer Price Inflation (%): World Bank  
 https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG
-Monthly Temperature Anomalies (°C): Our World in Data
-https://ourworldindata.org/grapher/monthly-temperature-anomalies 
 
-Global Datasets:
+Monthly Temperature Anomalies (°C): Our World in Data  
+https://ourworldindata.org/grapher/monthly-temperature-anomalies
 
-Annual Deaths from Natural Disasters: Our World in Data
+### Global Datasets
+
+Annual Deaths from Natural Disasters: Our World in Data  
 https://ourworldindata.org/grapher/number-of-deaths-from-natural-disasters?time=1926..latest
-Global GDP Over the Long Run: Our World in Data
+
+Global GDP Over the Long Run: Our World in Data  
 https://ourworldindata.org/grapher/global-gdp-over-the-long-run
-Monthly Temperature Anomalies (°C): Our World in Data
-Number of Natural Disaster Events per Year: Our World in Data
+
+Number of Natural Disaster Events per Year: Our World in Data  
 https://ourworldindata.org/grapher/number-of-natural-disaster-events
-Global Food Price Index: https://fred.stlouisfed.org/series/PFOODINDEXM
-https://fred.stlouisfed.org/series/PFOODINDEXM 
-Wheat Yield (tons/hectare): Our World in Data
+
+Global Food Price Index: Federal Reserve Economic Data  
+https://fred.stlouisfed.org/series/PFOODINDEXM
+
+Wheat Yield (tons/hectare): Our World in Data  
 https://ourworldindata.org/grapher/wheat-yields?time=1755
-Global Rise In Sea Levels: https://www.epa.gov/climate-indicators/climate-change-indicators-sea-level
 
-
-
-
+Global Rise in Sea Levels: U.S. Environmental Protection Agency  
+https://www.epa.gov/climate-indicators/climate-change-indicators-sea-level
